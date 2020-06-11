@@ -1,0 +1,66 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C&amp;C Remastered for Vortex – Documentation</title><link>/docs/</link><description>Recent content in Documentation on C&amp;C Remastered for Vortex</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Frequently Asked Questions</title><link>/docs/introduction/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/introduction/faq/</guid><description>
+&lt;p>Below is a collection of frequent questions and the best answers I can give.&lt;/p>
+&lt;h3 id="why-do-i-need-vortex-for-this">Why do I need Vortex for this?&lt;/h3>
+&lt;p>You don't! If you prefer installing and managing your mods manually, or using any other modding tools, I recommend using them! CnCRV is just an alternate method of installing mods for those who are more familiar with Vortex already.&lt;/p>
+&lt;h3 id="im-a-modpack-author-how-do-i-make-mods-compatible-with-vortex">I’m a mod/pack author, how do I make mods compatible with Vortex?&lt;/h3>
+&lt;p>They probably already are! If you want to maximise support and avoid some issues, pack your mod archive in such a way that the root of the archive should end up at the root of the user's &lt;code>Mods&lt;/code> directory, and that’s basically it.&lt;/p>
+&lt;p>The installer will auto-detect your mods &lt;code>ccmod.json&lt;/code> and ignore anything above it, so feel free to lay out your archive how you like as long as that file is in the right place.&lt;/p>
+&lt;h3 id="my-mod-got-installed-for-the-wrong-game-how-do-i-fix-it">My mod got installed for the wrong game! How do I fix it?&lt;/h3>
+&lt;p>The installer relies on finding a &lt;code>RedAlert.dll&lt;/code> or &lt;code>TiberianDawn.dll&lt;/code> file to determine which game to install for. If that doesn't work, or the installer picks the wrong game, open the mod details pane (double click in the Mods list) and change the Mod Type to the correct game. Run a Deploy and the mod should end up in the right place.&lt;/p>
+&lt;h3 id="what-about-mods-that-arent-on-the-nexus">What about mods that aren't on the Nexus?&lt;/h3>
+&lt;p>They should still work fine! As long as they have a &lt;code>ccmod.json&lt;/code> file, Vortex can try and install it anyway. Remember that non-Nexus mods won't have quite the same metadata available in Vortex you might be used to.&lt;/p></description></item><item><title>Docs: Installation</title><link>/docs/usage/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/usage/installation/</guid><description>
+&lt;h2 id="quick-start">Quick Start&lt;/h2>
+&lt;p>The fastest way to get started is to just open the Games page in Vortex and scroll down through the unmanaged games. You should see an entry for C&amp;amp;C Remastered Collection in there. Click Manage on that entry and follow the prompts to install the extension and restart Vortex. You should be good to go and try &lt;a href="../docs/usage/mods">installing some mods&lt;/a>!&lt;/p>
+&lt;h2 id="installing-the-extension">Installing the Extension&lt;/h2>
+&lt;p>If the quick start doesn't work or you want to install the extension yourself, there's a couple of different ways to do that! Unless you've got a pretty specific use case, you'll probably want one of the two automatic methods, but manual installation is available as well.&lt;/p>
+&lt;h3 id="automatic-installation">Automatic Installation&lt;/h3>
+&lt;blockquote>
+&lt;p>This is the easiest way to install!&lt;/p>
+&lt;/blockquote>
+&lt;ol>
+&lt;li>Open up Vortex, and open the Extensions panel from the left sidebar.&lt;/li>
+&lt;li>Click &lt;strong>Find more&lt;/strong> to open the list of Extensions&lt;/li>
+&lt;li>Find &lt;strong>Command and Conquer Remastered Support&lt;/strong> and click &lt;em>Install&lt;/em>&lt;/li>
+&lt;li>Wait for the extension to install and &lt;strong>restart Vortex&lt;/strong> when prompted.&lt;/li>
+&lt;/ol>
+&lt;p>Once Vortex has restarted, just click the Manage button on C&amp;amp;C Remastered in your Games screen and you're ready to &lt;a href="../docs/usage/mods">install some mods&lt;/a>!&lt;/p>
+&lt;h3 id="semi-automatic-installation">Semi-Automatic Installation&lt;/h3>
+&lt;p>If you can't install directly from the Extensions screen, you can instead install from the archive.&lt;/p>
+&lt;ol>
+&lt;li>Download the archive from &lt;a href="https://www.nexusmods.com/site/mods/133?tab=files">Nexus Mods&lt;/a> or &lt;a href="https://https://github.com/agc93/vortex-cncremastered/releases">GitHub&lt;/a>&lt;/li>
+&lt;li>Open the Extensions panel in Vortex&lt;/li>
+&lt;li>Click on the &lt;em>Drop File(s)&lt;/em> box in the corner and locate the archive you downloaded.&lt;/li>
+&lt;li>Wait for the extension to install and &lt;strong>restart Vortex&lt;/strong> when prompted.&lt;/li>
+&lt;/ol>
+&lt;p>Once Vortex has restarted, just click the Manage button on C&amp;amp;C Remastered in your Games screen and you're ready to &lt;a href="../docs/usage/mods">install some mods&lt;/a>!&lt;/p>
+&lt;h3 id="manual-installation">Manual Installation&lt;/h3>
+&lt;blockquote>
+&lt;p>Only attempt this if you &lt;em>absolutely&lt;/em> have to. It becomes much harder to debug and much harder to upgrade.&lt;/p>
+&lt;/blockquote>
+&lt;p>If you want to install the extension yourself, you will have to install the actual extension files manually. Make sure you close Vortex before proceeding.&lt;/p>
+&lt;p>First, download the archive from &lt;a href="https://www.nexusmods.com/site/mods/133?tab=files">Nexus Mods&lt;/a> or &lt;a href="https://https://github.com/agc93/vortex-cncremastered/actions">GitHub&lt;/a>.&lt;/p>
+&lt;p>Next, unpack the archive to somewhere convenient. You should have a directory named &lt;code>game-cncremastered&lt;/code> with four files inside:&lt;/p>
+&lt;ul>
+&lt;li>info.json&lt;/li>
+&lt;li>index.js&lt;/li>
+&lt;li>gameart.png&lt;/li>
+&lt;/ul>
+&lt;p>Now, copy the whole directory to your Vortex folder. You can easily open your Vortex folder by opening a new File Explorer window and entering the following in to the location bar: &lt;code>%APPDATA%/Vortex&lt;/code> and then opening the &lt;code>plugins&lt;/code> directory (create it if it doesn’t exist).&lt;/p>
+&lt;p>Once you’re done, you should have four files at the following locations:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">C:\Users\&amp;lt;your-user-name-here&amp;gt;\AppData\Roaming\Vortex\plugins\game-cncremastered\info.json
+C:\Users\&amp;lt;your-user-name-here&amp;gt;\AppData\Roaming\Vortex\plugins\game-cncremastered\index.js
+C:\Users\&amp;lt;your-user-name-here&amp;gt;\AppData\Roaming\Vortex\plugins\game-cncremastered\gameart.png
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>With those files in place, you're clear to start Vortex and you should see the C&amp;amp;C Remastered icon in the Games screen light up.&lt;/p></description></item><item><title>Docs: Installing Mods</title><link>/docs/usage/mods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/usage/mods/</guid><description>
+&lt;p>At it's core, installing mods is roughly the same as any Vortex-enabled game, once you've added C&amp;amp;C Remastered as a managed game in Vortex.&lt;/p>
+&lt;p>If you haven't already, open the Games screen and click the &lt;strong>Manage&lt;/strong> button on the C&amp;amp;C Remastered icon under &lt;em>Unmanaged&lt;/em>&lt;/p>
+&lt;hr>
+&lt;p>Installing mods from archives is the easiest way (at current) to install mods for your C&amp;amp;C Remastered games.&lt;/p>
+&lt;blockquote>
+&lt;p>In future, Nexus Mods might enable the &amp;ldquo;Download with Vortex&amp;rdquo; buttons for C&amp;amp;C Remastered but for now, just download the mods manually.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="install-from-archives">Install from archives&lt;/h2>
+&lt;p>You can also download mod archives directly from Nexus Mods or anywhere else you like and install them with Vortex. Simply use the &lt;em>Install From File&lt;/em> button in the toolbar or drop them onto the drop zone at the bottom of the Vortex window.&lt;/p>
+&lt;blockquote>
+&lt;p>Be aware that installing from non-Nexus archives will often not include the full metadata. You can double-click the mod in the mod list to change its details.&lt;/p>
+&lt;/blockquote>
+&lt;p>Please note that &amp;ldquo;raw&amp;rdquo; mods that aren't packaged in an archive (for example, loose &lt;code>ini&lt;/code> files) aren't supported, but Vortex should offer to create an archive for you if you try and install them.&lt;/p></description></item></channel></rss>
