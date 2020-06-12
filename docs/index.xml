@@ -54,10 +54,11 @@ C:\Users\&amp;lt;your-user-name-here&amp;gt;\AppData\Roaming\Vortex\plugins\game
 &lt;p>At it's core, installing mods is roughly the same as any Vortex-enabled game, once you've added C&amp;amp;C Remastered as a managed game in Vortex.&lt;/p>
 &lt;p>If you haven't already, open the Games screen and click the &lt;strong>Manage&lt;/strong> button on the C&amp;amp;C Remastered icon under &lt;em>Unmanaged&lt;/em>&lt;/p>
 &lt;hr>
-&lt;p>Installing mods from archives is the easiest way (at current) to install mods for your C&amp;amp;C Remastered games.&lt;/p>
 &lt;blockquote>
-&lt;p>In future, Nexus Mods might enable the &amp;ldquo;Download with Vortex&amp;rdquo; buttons for C&amp;amp;C Remastered but for now, just download the mods manually.&lt;/p>
+&lt;p>Remember that mods still need to be enabled in-game from the Options ▶ Mods menu!&lt;/p>
 &lt;/blockquote>
+&lt;h2 id="installing-from-nexus-mods">Installing from Nexus Mods&lt;/h2>
+&lt;p>If you're installing mods from Nexus Mods, you can use the &amp;ldquo;Vortex&amp;rdquo; or &amp;ldquo;Download with Mod Manager&amp;rdquo; buttons on the mod page to automatically open Vortex and install the download the mod. Simply Install and Enable like usual and you should be good to go.&lt;/p>
 &lt;h2 id="install-from-archives">Install from archives&lt;/h2>
 &lt;p>You can also download mod archives directly from Nexus Mods or anywhere else you like and install them with Vortex. Simply use the &lt;em>Install From File&lt;/em> button in the toolbar or drop them onto the drop zone at the bottom of the Vortex window.&lt;/p>
 &lt;blockquote>
