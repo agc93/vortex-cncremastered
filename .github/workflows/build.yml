@@ -63,6 +63,8 @@ jobs:
           Download and install using the Extensions pane in Vortex.
 
           To manually install, extract the zip to C:\Users\<user-name>\AppData\Roaming\Vortex\plugins\game-cncremastered.
+
+          Read about the changes in this release at [cnc.vortex.support/updates/${{ steps.vars.outputs.tag }}](https://cnc.vortex.support/updates/${{ steps.vars.outputs.tag }}).
         files: |
           ./extension/game-cncremastered.zip
       env:

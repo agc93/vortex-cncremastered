@@ -12,9 +12,11 @@ If you haven't already, open the Games screen and click the **Manage** button on
 
 ---
 
-Installing mods from archives is the easiest way (at current) to install mods for your C&C Remastered games.
+> Remember that mods still need to be enabled in-game from the Options ▶ Mods menu!
 
-> In future, Nexus Mods might enable the "Download with Vortex" buttons for C&C Remastered but for now, just download the mods manually.
+## Installing from Nexus Mods
+
+If you're installing mods from Nexus Mods, you can use the "Vortex" or "Download with Mod Manager" buttons on the mod page to automatically open Vortex and download the mod. Simply Install and Enable like usual and you should be good to go.
 
 ## Install from archives
 
