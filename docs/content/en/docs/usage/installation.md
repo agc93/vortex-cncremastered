@@ -10,6 +10,10 @@ description: >
 
 The fastest way to get started is to just open the Games page in Vortex and scroll down through the unmanaged games. You should see an entry for C&C Remastered Collection in there. Click Manage on that entry and follow the prompts to install the extension and restart Vortex. You should be good to go and try [installing some mods](/docs/usage/mods)!
 
+![installation process][install_quick]
+
+[install_quick]: /install_cncr_sm.gif
+
 ## Installing the Extension
 
 If the quick start doesn't work or you want to install the extension yourself, there's a couple of different ways to do that! Unless you've got a pretty specific use case, you'll probably want one of the two automatic methods, but manual installation is available as well.
