@@ -11,6 +11,7 @@
 &lt;p>They should still work fine! As long as they have a &lt;code>ccmod.json&lt;/code> file, Vortex can try and install it anyway. Remember that non-Nexus mods won't have quite the same metadata available in Vortex you might be used to.&lt;/p></description></item><item><title>Docs: Installation</title><link>/docs/usage/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/usage/installation/</guid><description>
 &lt;h2 id="quick-start">Quick Start&lt;/h2>
 &lt;p>The fastest way to get started is to just open the Games page in Vortex and scroll down through the unmanaged games. You should see an entry for C&amp;amp;C Remastered Collection in there. Click Manage on that entry and follow the prompts to install the extension and restart Vortex. You should be good to go and try &lt;a href="../docs/usage/mods">installing some mods&lt;/a>!&lt;/p>
+&lt;p>&lt;img src="../install_cncr_sm.gif" alt="installation process">&lt;/p>
 &lt;h2 id="installing-the-extension">Installing the Extension&lt;/h2>
 &lt;p>If the quick start doesn't work or you want to install the extension yourself, there's a couple of different ways to do that! Unless you've got a pretty specific use case, you'll probably want one of the two automatic methods, but manual installation is available as well.&lt;/p>
 &lt;h3 id="automatic-installation">Automatic Installation&lt;/h3>
