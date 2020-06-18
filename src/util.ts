@@ -2,6 +2,10 @@ import path = require('path');
 import { IInstruction, IExtensionApi, IGame } from "vortex-api/lib/types/api";
 import { remote } from 'electron';
 
+export function toFriendlyName(str: string): string {
+    return str.replace(/([A-Z])/g, ' $1').trim()
+}
+
 export function isTiberianMod(files: string[]) : boolean
 export function isTiberianMod(instructions: IInstruction[]) : boolean
 export function isTiberianMod(filesOrInstructions: string[]|IInstruction[]) : boolean {

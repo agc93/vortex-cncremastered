@@ -1,10 +1,11 @@
 import path = require('path');
 import { fs, log, util, selectors } from "vortex-api";
-import { IExtensionContext, IDiscoveryResult, IState, ISupportedResult, ProgressDelegate, IInstallResult, IExtensionApi, IGameStoreEntry, IGame } from 'vortex-api/lib/types/api';
+import { IExtensionContext, IDiscoveryResult, IState, ISupportedResult, ProgressDelegate, IInstallResult, IExtensionApi, IGameStoreEntry, IGame, IMod } from 'vortex-api/lib/types/api';
 import { ProfileClient } from "vortex-ext-common";
 import { InstructionType } from 'vortex-api/lib/extensions/mod_management/types/IInstallResult';
 
 import { getGamePath, getUserModsPath, isRedAlertMod, isTiberianMod, isRulesMod } from "./util";
+import { tableAttributes } from "./attributes";
 
 // import { ProfileClient } from "./profileClient";
 
@@ -21,6 +22,20 @@ let GAME_PATH = '';
 export function findGame() {
     return util.GameStoreHelper.findByAppId(STEAMAPP_ID.toString())
       .then((game: IGameStoreEntry) => game.gamePath);
+}
+
+const getGameName = (mod: IMod) => {
+    switch (mod.type) {
+        case 'cncr-ra':
+        case 'cnc-rules':
+            return 'Red Alert';
+        case 'cncr-tiberian':
+            return 'Tiberian Dawn';
+        case 'cncr-combined':
+            return 'Both';
+        default:
+            return '';
+    }
 }
 
 
@@ -61,6 +76,15 @@ function main(context : IExtensionContext) {
         }
     });
 
+    context.registerTableAttribute(
+        'mods', 
+        {
+            ...tableAttributes.game,
+            calc: (mod: IMod) => getGameName(mod),
+            condition: () => selectors.activeGameId(context.api.getState()) === GAME_ID,
+        }
+    );
+
     context.registerModType(
         'cncr-tiberian', 
         100, 
@@ -83,6 +107,16 @@ function main(context : IExtensionContext) {
         (inst) => Promise.resolve(isRulesMod(inst)),
         { name: "Rules Tweak", mergeMods: true}
     );
+    // ↘ is an insurance policy against mod authors in future creating mods that affect
+    // ↘ both games in one archive. We'd need to bump the priority above existing types.
+    /* context.registerModType(
+        'cncr-combined',
+        100,
+        gameId => gameId === GAME_ID,
+        () => getUserModsPath(),
+        (inst) => Promise.resolve(isRedAlertMod(inst) && isTiberianMod(inst)),
+        { name: "Combined" }
+    ) */
     context.registerInstaller(
         'cncr-installer', 
         25, 

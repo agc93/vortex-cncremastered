@@ -1,5 +1,7 @@
 # C&C Remastered Collection support for Vortex
 
+> Find the full documentation at [cnc.vortex.support](https://cnc.vortex.support/)
+
 This extension adds support for C&C Remastered mods to the Vortex mod manager.
 
 **Important**: This extension has not been tested *at all* with the Origin version of C&C Remastered. If you own the Origin version and can help me out with a few questions, please find me on the Nexus Mods Discord or raise an issue here.

@@ -1,6 +1,6 @@
 {
   "name": "game-cncremastered",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds support for C&C Remastered Collection mods in Vortex",
   "main": "./dist/index.js",
   "scripts": {
