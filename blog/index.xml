@@ -1,4 +1,10 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C&amp;C Remastered for Vortex – Updates</title><link>/blog/</link><description>Recent content in Updates on C&amp;C Remastered for Vortex</description><generator>Hugo -- gohugo.io</generator><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Initial Release</title><link>/blog/2020/06/11/initial-release/</link><pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate><guid>/blog/2020/06/11/initial-release/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C&amp;C Remastered for Vortex – Updates</title><link>/blog/</link><description>Recent content in Updates on C&amp;C Remastered for Vortex</description><generator>Hugo -- gohugo.io</generator><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Alpha 2 Release</title><link>/blog/2020/06/18/alpha-2-release/</link><pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate><guid>/blog/2020/06/18/alpha-2-release/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>This release is now available &lt;a href="https://www.nexusmods.com/site/mods/133?tab=files">on Nexus Mods&lt;/a>.&lt;/p>
+&lt;/div>
+&lt;p>This release is a minor update to &lt;a href="../updates/v0.0.1">the first alpha&lt;/a> of the C&amp;amp;C Remastered extension! We've added a new table attribute (i.e. column) so you can group and sort your Mods list by which game your mods are applied to.&lt;/p>
+&lt;p>At this time we &lt;strong>only support the Steam&lt;/strong> version of the game automatically. If you own the Origin version and can help me out with a few questions, please find me on the Nexus Mods Discord or raise an issue here.&lt;/p>
+&lt;p>You should be able to install mods for both Tiberian Dawn and Red Alert from archives in this release and use all the basic Vortex features of install/enable/disable/deploy/purge.&lt;/p></description></item><item><title>Blog: Initial Release</title><link>/blog/2020/06/11/initial-release/</link><pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate><guid>/blog/2020/06/11/initial-release/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>This release is now available &lt;a href="https://www.nexusmods.com/site/mods/133?tab=files">on Nexus Mods&lt;/a>.&lt;/p>
 &lt;/div>
