@@ -53,7 +53,7 @@ function main(context : IExtensionContext) {
         mergeMods: false,
         logo: 'gameart.png',
         supportedTools: [],
-        executable: () => GAME_EXE,
+        executable: () => LAUNCHER_EXE,
         requiredFiles: [
             GAME_EXE,
             LAUNCHER_EXE,
